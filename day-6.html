@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .width-transition{
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin:30px;
+            transition: width 4s 2s;
+        }
+
+        .width-transition:hover{
+            width: 300px;
+        }
+        .button{
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            transition: background-color 1s ease;
+        }
+
+        .button:hover{
+            background-color: red
+        }
+        .text{
+            font-size: 20px;
+            transition: font-size 1s ease-in-out 3s;
+        }
+        .text:hover{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Width transition -->
+     <div class="width-transition"></div>
+
+     <!-- Button transition -->
+      <button class="button">Hover me</button>
+
+      <!-- font size transition -->
+       <p class="text">Hover over me</p>
+</body>
+</html>
