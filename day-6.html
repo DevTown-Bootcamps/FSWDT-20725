@@ -24,7 +24,7 @@
         }
 
         .button:hover{
-            background-color: red
+            background-color: red;
         }
         .text{
             font-size: 20px;
@@ -32,6 +32,74 @@
         }
         .text:hover{
             font-size: 30px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;background-color: orange;
+            transition: width 1s ease,height 2s ease;
+            margin:20px;
+        }
+
+        .box:hover{
+            width: 400px;
+            height: 400px;
+        }
+
+        .scale{
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            transition: transform 1s ease-in-out;
+            margin: 20px;
+            }
+
+            .scale:hover{
+                transform: scale(1.5);
+            }
+
+        .fade{
+            background-color: purple;
+            padding: 20px;
+            color: white;
+            opacity: 0.9;
+            transition: opacity 2s ease-in;
+            margin: 20px;
+        }
+        .fade:hover{
+            opacity: 0;
+        }
+        .rotate{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            margin: 30px;
+            transition: transform 1s ease-in-out 1s;
+        }
+        .rotate:hover{
+            transform: rotate(60deg);
+        }
+        .radius{
+             width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 30px;
+            border-radius:10px;
+            transition: border-radius 1s ease-in-out 1s;
+        }
+        .radius:hover{
+            border-radius: 20px;
+        }
+        .combine{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition: all 1s ease-in-out;
+            margin-top: 50px;
+        }
+        .combine:hover{
+            background-color: red;
+            width: 150px;
+            transform: rotate(45deg);
         }
     </style>
 </head>
@@ -44,5 +112,21 @@
 
       <!-- font size transition -->
        <p class="text">Hover over me</p>
+
+       <div class="box"></div>
+
+       <div class="scale"></div>
+
+       <div class="fade">Fade me out</div>
+
+       <div class="rotate"></div>
+
+        <div class="radius"></div>
+
+        <div class="combine"></div>
+
+        <!-- implement scale-transformation, background-color change, and rotate -->
+
+       
 </body>
 </html>
