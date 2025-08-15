@@ -47,3 +47,7 @@ let result=s<g? true:false;
 
 console.log(result);
 
+// 1)try checking if d and e are equal.loose and strict checking
+// 2)create a case to check if s is largest of all three, s,g,d
+// 3)create a case to check if s is smaller than any of the three
+
