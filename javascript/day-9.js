@@ -43,11 +43,50 @@ let g=20;
 let d=50;
 let e='50';
 
-let result=s<g? true:false;
+// let result=s<g? true:false;
 
-console.log(result);
+// console.log(result);
 
 // 1)try checking if d and e are equal.loose and strict checking
 // 2)create a case to check if s is largest of all three, s,g,d
 // 3)create a case to check if s is smaller than any of the three
 
+// if..else if..else
+
+
+// if(s>50){
+//     console.log('s greater than 50');
+// }else if(s>20){
+//     console.log("s is greater than 20");
+// }else if(s>10){
+//     console.log("s is greater than 10");
+// }else{
+//     console.log("s is smaller that 10");
+// }
+
+// nested if
+// if(s>50){
+//     console.log('s greater than 50');
+// }
+// if(s>20){
+//     console.log('s greater than 20');
+// }
+// if(s>10){
+//     console.log('s greater than 10');
+// }
+
+// nexted if
+
+if(s>10){
+    if(s>20){
+        if(s>50){
+            console.log("s is greater than 50");
+        }else{
+            console.log("s is greater than 20");
+        }
+    }else{
+        console.log("s us greater than 10");
+    }
+}else{
+    console.log("s is greater thab 0");
+}
