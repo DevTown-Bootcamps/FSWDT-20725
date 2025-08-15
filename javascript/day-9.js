@@ -77,16 +77,46 @@ let e='50';
 
 // nexted if
 
-if(s>10){
-    if(s>20){
-        if(s>50){
-            console.log("s is greater than 50");
-        }else{
-            console.log("s is greater than 20");
-        }
-    }else{
-        console.log("s us greater than 10");
-    }
-}else{
-    console.log("s is greater thab 0");
+// if(s>10){
+//     if(s>20){
+//         if(s>50){
+//             console.log("s is greater than 50");
+//         }else{
+//             console.log("s is greater than 20");
+//         }
+//     }else{
+//         console.log("s us greater than 10");
+//     }
+// }else{
+//     console.log("s is greater thab 0");
+// }
+
+// use if..else staement to check if a number is neagtive or positive
+
+// Switch case
+
+let grade=40;
+
+switch(grade){
+    case 80:
+        console.log("A");
+        break;
+    case 70:
+        console.log("B");
+        break;
+    case 60:
+        console.log("C");
+        break;
+    default:
+        console.log("F");    
 }
+
+// let day-4;
+
+// 1-monday
+// 2-tuesday
+// 3-wednesday
+// 4-thursdat
+// 5-friday
+// 6-saturday
+// 7-sunday
