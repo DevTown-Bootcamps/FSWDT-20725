@@ -42,12 +42,29 @@ let fruit=["apple","banana","pineapple"];
 
 // nested loops
 //loop inside loop
-for(let i=0;i<5;i++){
-    for(let j=0;j<5;j++){
-        console.log(i," ",j);
-    }
-}
+// for(let i=0;i<5;i++){
+//     for(let j=0;j<5;j++){
+//         console.log(i," ",j);
+//     }
+// }
 
 //total numer of execution-i*j-5*5=25;
+
+
+//break-in a loop if you want to cancel the execution of the loop at any given time, at any given condition
+
+// for(let k=1;k<=10;k++){
+//     console.log(k);
+//     if(k%2===0){
+//       break;
+//     }
+// }
+
+for(let k=1;k<=10;k++){
+    if(k%2===0){
+      continue;
+    }
+    console.log(k);
+}
 
 
