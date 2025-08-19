@@ -109,6 +109,8 @@ console.log(sum);
 //current=9;total=45;
 //current=10;total=55;
 
+//compute cube of each element of an array and then print it using for..each();
+
 
 
 
