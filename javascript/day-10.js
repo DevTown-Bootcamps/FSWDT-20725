@@ -16,7 +16,7 @@
 //     console.log(i);
 // }
 
-let fruit=["apple","banana","pineapple"];
+// let fruit=["apple","banana","pineapple"];
 
 // for(let i=0;i<fruit.length;i++){
 //     console.log(fruit[i]);
@@ -60,11 +60,55 @@ let fruit=["apple","banana","pineapple"];
 //     }
 // }
 
-for(let k=1;k<=10;k++){
-    if(k%2===0){
-      continue;
-    }
-    console.log(k);
+// for(let k=1;k<=10;k++){
+//     if(k%2===0){
+//       continue;
+//     }
+//     console.log(k);
+// }
+
+//take a loop and break the loop when a odd number is encountered
+//take a loop and skip all odd numbers.
+
+//for each..
+
+let fruit=["apple","banana","pineapple"];
+
+// fruit.forEach((a,index)=>{
+//    console.log(a);
+// })
+
+//map..
+let a=[1,2,3,4,5,6,7,8,9,10];
+// let square=a.map(a=>a*a);
+// console.log(square);
+
+//.filter()
+// let even=a.filter(a=> a%2===0);
+// console.log(even);
+
+//.reduce()
+let sum=0;
+for(let i=0;i<a.length;i++){
+   sum+=a[i];
 }
+console.log(sum);
+
+sum=a.reduce((total,current)=>total+current,0);
+console.log(sum);
+
+//total=0,current=0;
+//current=1;total=1;
+//current=2;total=3;
+//current=3;total=6;
+//current=4;total=10;
+//current=5;total=15;
+//current=6;total=21;
+//current=7;total=28;
+//current=8;total=36;
+//current=9;total=45;
+//current=10;total=55;
+
+
 
 
