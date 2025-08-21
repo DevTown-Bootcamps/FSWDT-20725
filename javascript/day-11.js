@@ -36,3 +36,7 @@ let fruit=["cheery","apple",14,32,15,false];
 //slice(start,end)-return a part of a array,It will print the values of index from start to end-1;
 
 console.log(fruit.slice(1,4));
+
+//take an array add 34,25 at the starting of the array, and 56 and 66 at the end of the array,
+//do one pop and one shift operation, then print the array.Tell me the index of 56,
+//then print that array from index 2 to 4.
