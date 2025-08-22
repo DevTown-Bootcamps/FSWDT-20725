@@ -66,3 +66,21 @@ function mul(a=3,b=6){
 console.log(mul());
 console.log(mul(2));
 console.log(mul(2,3));
+
+//create a function to find and return the largest of three number.No defaut parameter value should be given.
+//create a fuction to compute factorial of a number.
+
+//taking multiple paramteres
+function sum(...n){
+  let sum=0;
+
+  for(let num of n){
+    sum+=num;
+  }
+
+  return sum;
+}
+
+console.log(sum(1,2));
+console.log(sum(1,2,3,4,5,6));
+console.log(sum(1,2,34,25,26,78,89));
