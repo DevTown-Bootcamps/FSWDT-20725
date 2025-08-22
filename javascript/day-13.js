@@ -43,8 +43,26 @@ let add=function(a,b){
 console.log(add(4,5));
 
 //arrow function
-const greet=()=>{
-    console.log("Hello");
+// const greet=()=>{
+//     console.log("Hello");
+// }
+
+// greet();
+
+//write a function to compute square of number.
+//write a function to comppute cube of a number.
+
+// function greet(a="guest"){
+//   console.log(a);
+// }
+
+// greet();
+// greet("Anshul");
+
+function mul(a=3,b=6){
+    return a*b;
 }
 
-greet();
+console.log(mul());
+console.log(mul(2));
+console.log(mul(2,3));
