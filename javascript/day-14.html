@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Hello</p>
+    <p>Hello2</p>
+
+    <button onclick="changeText()">Click me</button>
+
+    <div id="innerhtml"></div>
+
+    <button id="btn">click for alert</button>
+    
+    <script>
+        // Selection based upon id and tag name
+      let para=document.getElementById("demo");
+      console.log(para.innerText);
+ 
+      let tag=document.getElementsByTagName("p");
+      
+      //chnaging the text in my p tag
+      function changeText(){
+        document.getElementById("demo").innerHTML="Hello this is new text";
+        let para=document.getElementById("demo");
+        console.log(para.innerText);
+      }
+
+      //changin tag in a div
+      document.getElementById("innerhtml").innerHTML="<strong>Hello,welcome to my site</strong>";
+
+
+      //adding css to our tag
+      document.getElementById("demo").style.color="blue";
+      document.getElementById("demo").style.fontSize="30px";
+
+      //Handling click event
+      document.getElementById("btn").addEventListener("click",function(){
+        alert("Button was clicked");
+      })
+
+
+
+    </script>
+</body>
+</html>
