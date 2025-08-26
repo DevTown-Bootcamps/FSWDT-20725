@@ -21,6 +21,13 @@
     <p class="color">four</p>
     <p class="color">five</p>
 
+    <input type="text" id="name" placeholder="Enter your name"/>
+    <button onclick="submit()">Submit</button>
+    <p id="displayname"></p>
+
+    <input type="password" id="pass" placeholder="Enter your password"/>
+    <button onclick="toggle()">Hide/show password</button>
+
 
     <script>
         //adding new element
@@ -45,6 +52,20 @@
         element.forEach(function(element){
             element.style.color="red";
         });
+
+        //taking input
+        function submit(){
+            const input=document.getElementById("name").value;
+            document.getElementById("displayname").innerText=input;
+        }
+
+        //hide/show password
+        function toggle(){
+            const input=document.getElementById("pass");
+            input.type=input.type==="password"?"text":"password";
+            console.log(input.type);
+        }
     </script>
+    <!-- append a child to a div tag -->
 </body>
 </html>
