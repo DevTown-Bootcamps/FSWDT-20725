@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- counting number of click counts -->
+     <button id="clickbtn">Click Me</button>
+
+     <!-- hover event -->
+      <div id="hoverbox">Hover me</div>
+
+      <!-- keydown trigger -->
+       <input type="text" placeholder="Name" id="keyinput" />
+
+       <!-- change event -->
+        <select id="selectMenu">
+          <option value="">Choose one option</option>
+          <option value="apple">Apple</option>
+          <option value="pine">Pineapple</option>
+          <option value="banana">Banana</option>
+        </select>
+
+        <!-- submit event -->
+         <form id="form">
+            <input type="text" id="nameinput" placeholder="Enter your name"/>
+            <button type="submit">Submit</button>
+         </form>
+
+
+     <script>
+        let count=0;
+        document.getElementById("clickbtn").addEventListener("click",function(){
+            count=count+1;
+            console.log(count);
+        })
+
+        document.getElementById("hoverbox").addEventListener("mouseover",function(){
+            this.style.background="orange";
+            this.textContent="hovered";
+        })
+
+        document.getElementById("hoverbox").addEventListener("mouseout",function(){
+            this.style.background="white";
+            this.textContent="Hover me";
+        })
+
+        document.getElementById("keyinput").addEventListener("keydown",function(){
+            console.log("key pressed",event.key);
+        })
+
+        document.getElementById("selectMenu").addEventListener("change",function(){
+            alert("There was a change in selection:"+this.value);
+        })
+
+        document.getElementById("form").addEventListener("submit",function(e){
+             e.preventDefault();
+             const name=document.getElementById("nameinput").value;
+             alert("Your name is: "+name);
+        })
+     </script>
+</body>
+</html>
