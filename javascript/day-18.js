@@ -33,19 +33,61 @@
 //   })
 
 
-const falling=new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        resolve("Nothing went wrong");
-    },2000);
-});
+// const falling=new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve("Nothing went wrong");
+//     },2000);
+// });
 
-falling
-  .then(result=>{
+// falling
+//   .then(result=>{
+//     console.log(result);
+//   })
+//   .catch(error=>{
+//     console.error(error);
+//   })
+//   .finally(()=>{
+//     console.log("I am a chill execution, will get executed in all cases");
+//   })
+
+// const fast=new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve("First One");
+//     },500)
+// });
+
+// const slow=new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve("Second One");
+//     },1000)
+// })
+
+// Promise.race([fast,slow]).then(result=>{
+//     console.log(result);
+// });
+
+function checkOddNumber(num){
+    return new Promise((resolve,reject)=>{
+        if(num%2===0){
+            reject(`Rejected: ${num} is a even number`);
+        }else{
+            resolve(`Resolved: ${num} is an odd number`);
+        }
+    })
+}
+
+checkOddNumber(7)
+ .then(result=>{
     console.log(result);
-  })
-  .catch(error=>{
-    console.error(error);
-  })
-  .finally(()=>{
-    console.log("I am a chill execution, will get executed in all cases");
-  })
+ })
+ .catch(error=>{
+    console.log(error);
+ })
+
+ checkOddNumber(10)
+ .then(result=>{
+    console.log(result);
+ })
+ .catch(error=>{
+    console.log(error);
+ })
