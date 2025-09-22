@@ -27,8 +27,7 @@
 //   })
 //   .catch(error=>{
 //     console.log(error);
-//   })
-//   .finally(()=>{
+//   }).finally(()=>{
 //     console.log("Operation completed successfully");
 //   })
 
@@ -70,7 +69,8 @@ function checkOddNumber(num){
     return new Promise((resolve,reject)=>{
         if(num%2===0){
             reject(`Rejected: ${num} is a even number`);
-        }else{
+        
+//   }else{
             resolve(`Resolved: ${num} is an odd number`);
         }
     })
