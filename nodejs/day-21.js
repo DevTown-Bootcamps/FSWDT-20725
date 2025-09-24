@@ -1,17 +1,38 @@
 //Events
 
-const event=require('events');
-const fs=require("fs");
+// const event=require('events');
+// const fs=require("fs");
+// const { Http2ServerRequest } = require('http2');
 
-const myEmitter=new event.EventEmitter();
+// const myEmitter=new event.EventEmitter();
 
-myEmitter.on('fileDone', ()=>{
-    console.log("file has been read successfully");
-})
+// myEmitter.on('fileDone', ()=>{
+//     console.log("file has been read successfully");
+// })
 
-fs.readFile('test.txt','utf-8',(err,data)=>{
-    if(err) return console.log("Error was there");
-    myEmitter.emit('fileDone');
-})
+// fs.readFile('test.txt','utf-8',(err,data)=>{
+//     if(err) return console.log("Error was there");
+//     myEmitter.emit('fileDone');
+// })
 
 //create the similary emitter for a write operation.
+
+
+// Creation of server using Http
+
+// "/"-localhost:3000;
+// /about-localhost:3000/about
+
+const http=require('http');
+
+http.createServer((req,res)=>{
+    if(req.url==="/"){
+        res.end("Home page");
+    }else if(req.url==="/about"){
+      res.end("about");
+    }else{
+        res.end("Page not found");
+    }
+}).listen(3000,()=>{
+    console.log("Server is running on port 3000");
+})
